@@ -254,6 +254,85 @@
 	"cwrc:hasCertainty": "cwrc:high"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/siemundm/LeafWriter_training/main/getting_started/exercises/Macavity/macavity_exercise.xml?person_annotation_20230220150748735",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-02-20T14:07:48.735Z",
+	"dcterms:modified": "2023-02-20T14:07:48.735Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/siemundm",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Melanie Seltmann"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/siemundm/LeafWriter_training/main/getting_started/exercises/Macavity/macavity_exercise.xml?person_annotation_20230220150748735#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/siemundm/LeafWriter_training/main/getting_started/exercises/Macavity/macavity_exercise.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/siemundm/LeafWriter_training/main/getting_started/exercises/Macavity/macavity_exercise.xml?person_annotation_20230220150748735#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/lg/l/persName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://dbpedia.org/resource/Macavity",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><encodingDesc>
 			<projectDesc>
 				<p>This encoded file was created by Diane Jakacki and made available for a Linked
@@ -271,7 +350,7 @@
 					<docAuthor>T.S. Eliot</docAuthor>
 				</byline>
 				<lg>
-					<l><persName key="Macavity" ref="http://dbpedia.org/resource/Macavity" cert="high" type="fictional">Macavity's</persName> a Mystery Cat: he's called the Hidden Paw</l>
+					<l><persName key="Macavity" ref="http://dbpedia.org/resource/Macavity" cert="high" type="fictional">Macavity's</persName> a Mystery Cat: <persName key="Macavity" ref="http://dbpedia.org/resource/Macavity">he</persName>'s called the Hidden Paw</l>
 					<l>For he's the master criminal who can defy the Law.</l>
 					<l>He's the bafflement of <orgName key="Scotland Yard" ref="http://viaf.org/viaf/9301149198352074940001/">Scotland Yard</orgName>, the Flying Squad's despair:</l>
 					<l>For when they reach the scene of crime—Macavity's not there!</l>
